@@ -3277,7 +3277,15 @@ body.is-touch .poptrox-popup .closer {
 	input,
 	select,
 	textarea {
-		font-size: 12pt;
+		font-size: 11pt;
+	}
+
+	#header h1 {
+		padding-left: 30%;
+	}
+
+	.inner {
+		margin-top: 5%;
 	}
 
 }
@@ -3294,7 +3302,7 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	#header h1 {
-		font-size: 1.25em;
+		font-size: 0.75em;
 	}
 
 	#header h1 br {
@@ -3307,13 +3315,21 @@ body.is-touch .poptrox-popup .closer {
 
 	/* Footer */
 
-	#footer .copyright li {
+	#footer .copyright {
+		color: rgba(255, 255, 255, 0.4);
+		font-size: 0.8em;
+		list-style: none;
+		margin: 1em 0 5em 0;
+		padding: 0;
+	}
+
+	/* #footer .copyright li {
 		border-left-width: 0;
 		display: block;
 		line-height: 2.25em;
 		margin-left: 0;
 		padding-left: 0;
-	}
+	} */
 
 	/* Main */
 
@@ -3329,6 +3345,12 @@ body.is-touch .poptrox-popup .closer {
 /* Medium */
 
 @media screen and (max-width: 980px) {
+
+
+	#InfoBanner {
+		margin-left: 3%;
+		position: absolute;
+	}
 
 	/* Basic */
 
@@ -3354,7 +3376,7 @@ body.is-touch .poptrox-popup .closer {
 	#header {
 		background-attachment: scroll;
 		background-position: top left, center center;
-		background-size: auto, cover;
+		background-size: cover, cover;
 		left: auto;
 		padding: 6em 4em;
 		position: relative;
@@ -3365,7 +3387,9 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	#header h1 {
-		font-size: 1.75em;
+		font-size: 1.25em;
+		margin: 1em 200px 20px 200px;
+		padding-left: 0;
 	}
 
 	#header h1 br {
@@ -3419,6 +3443,11 @@ body.is-touch .poptrox-popup .closer {
 
 @media screen and (max-width: 736px) {
 
+
+	#InfoBanner {
+		margin-left: 8%;
+	}
+
 	/* Basic */
 
 	h1 {
@@ -3461,7 +3490,7 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	#header h1 {
-		font-size: 1.35em;
+		font-size: 1.15em;
 	}
 
 	/* Footer */
@@ -3498,11 +3527,16 @@ body.is-touch .poptrox-popup .closer {
 
 @media screen and (max-width: 480px) {
 
+	#InfoBanner {
+		margin-left: 40%;
+	}
+
 	/* Header */
 
 	#header {
 		padding: 4.5em 1.5em;
 	}
+
 
 	#header h1 br {
 		display: none;
@@ -3510,9 +3544,23 @@ body.is-touch .poptrox-popup .closer {
 
 	/* Footer */
 
+	.cloudzy {
+		top: 66%;
+		display: block;
+		left: 43%;
+		position: absolute;
+	}
+
+	.links {
+		display: block;
+		position: absolute;
+		top: 52%;
+		left: 41%;
+	}
+
 	#footer .copyright li {
 		border-left-width: 0;
-		display: block;
+		display: inline-block;
 		line-height: 2.25em;
 		margin-left: 0;
 		padding-left: 0;
