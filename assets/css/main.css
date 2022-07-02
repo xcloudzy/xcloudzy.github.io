@@ -3343,6 +3343,50 @@ body.is-touch .poptrox-popup .closer {
 
 }
 
+@media screen and (max-width: 1024px) {
+	#InfoBanner {
+		margin-left: 3%;
+		position: fixed;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+
+	#header h1 {
+		font-size: 0.75em;
+	}
+
+	#header h1 br {
+		display: none;
+	}
+
+	#header strong {
+		display: block;
+	}
+
+	.inner {
+		margin-top: 15%;
+	}
+
+	#footer .icons {
+		margin-right: 1%;
+	}
+
+	#footer {
+		font-size: 80%;
+	}
+}
+
+
 /* Medium */
 
 @media screen and (max-width: 980px) {
@@ -3377,7 +3421,7 @@ body.is-touch .poptrox-popup .closer {
 	#header {
 		background-attachment: scroll;
 		background-position: top left, center center;
-		background-size: cover, cover;
+		background-size: cover, 150%;
 		left: auto;
 		padding: 6em 4em;
 		position: relative;
@@ -3487,11 +3531,21 @@ body.is-touch .poptrox-popup .closer {
 	/* Header */
 
 	#header {
-		padding: 2.25em 1.5em;
+		padding: 3.25em 1.5em;
 	}
 
 	#header h1 {
 		font-size: 1.15em;
+		margin-left: 90px;
+		margin-right: 90px;
+	}
+
+	#header strong {
+		display: block;
+	}
+
+	#header h1 br {
+		display: none;
 	}
 
 	/* Footer */
@@ -3530,14 +3584,19 @@ body.is-touch .poptrox-popup .closer {
 
 	#InfoBanner {
 		margin-left: 40%;
+		position: absolute;
 	}
 
 	/* Header */
 
 	#header {
 		padding: 4.5em 1.5em;
+		margin: 0;
 	}
 
+	#header h1 {
+		margin: 0;
+	}
 
 	#header h1 br {
 		display: none;
@@ -3568,6 +3627,16 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 }
+
+
+/* X-X-small */
+
+@media screen and (max-width: 260px) {
+	#InfoBanner {
+		display: none;
+	}
+}
+
 
 .underline-on-hover {
 	background: linear-gradient(currentColor 0 0) bottom left/ var(--underline-width, 0%) 0.1em no-repeat;
