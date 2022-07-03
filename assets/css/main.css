@@ -2924,7 +2924,7 @@ input[type="button"]:disabled,
 .about {
 	color: rgb(0 214 203);
 	font-weight: 500;
-
+	cursor: context-menu;
 }
 
 #header .image.avatar {
@@ -3637,11 +3637,10 @@ body.is-touch .poptrox-popup .closer {
 	}
 }
 
-
 .underline-on-hover {
 	background: linear-gradient(currentColor 0 0) bottom left/ var(--underline-width, 0%) 0.1em no-repeat;
 	/* color: #f80; */
-	display: inline-block;
+	display: block;
 	padding: 0 .5em 0.2em;
 	text-decoration: none;
 	transition: background-size 0.5s;
@@ -3650,4 +3649,18 @@ body.is-touch .poptrox-popup .closer {
 .underline-on-hover:hover {
 	color: #b52b00;
 	--underline-width: 100%;
+	width: 100%;
+}
+
+.about {
+	text-align: center;
+	width: 0px;
+	transition: width 1.5s;
+	/* needed for when the name is more than one word */
+	white-space: nowrap;
+}
+
+.about-content {
+	display: block;
+	cursor: context-menu;
 }
