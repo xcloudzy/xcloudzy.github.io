@@ -3551,7 +3551,7 @@ body.is-touch .poptrox-popup .closer {
 	/* Footer */
 
 	#footer {
-		padding: 2.25em 1.5em;
+		padding: 0.25em 1.5em;
 	}
 
 	/* Main */
@@ -3604,7 +3604,11 @@ body.is-touch .poptrox-popup .closer {
 
 	/* Footer */
 
-	.cloudzy {
+	#footer {
+		padding: 2.25em 12.5em;
+	}
+
+	/* .cloudzy {
 		top: 66%;
 		display: block;
 		left: 43%;
@@ -3624,16 +3628,28 @@ body.is-touch .poptrox-popup .closer {
 		line-height: 2.25em;
 		margin-left: 0;
 		padding-left: 0;
-	}
+	} */
 
 }
 
+
+@media screen and (max-width: 480px) {
+	#footer {
+		padding: 0.25em 0.5em;
+	}
+}
 
 /* X-X-small */
 
 @media screen and (max-width: 260px) {
 	#InfoBanner {
 		display: none;
+	}
+
+
+	#footer .copyright li a {
+		line-height: 0;
+		left: -8%;
 	}
 }
 
